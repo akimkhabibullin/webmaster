@@ -40,3 +40,72 @@ body {
 .nav-links a:hover {
   opacity: 0.8;
 }
+
+/* Footer */
+.site-footer {
+  background-color: #F6DEB3;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  color: #4E0B04;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Left side */
+.footer-left p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-badge {
+  display: inline-block;
+  background-color: #FFC15E;
+  color: #4E0B04;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-created {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  margin-top: auto; /* 👈 pushes logo to bottom */
+  width: 140px;
+  height: auto;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+/* Logo image */
+.footer-logo {
+  width: 140px;
+  height: auto;
+}
