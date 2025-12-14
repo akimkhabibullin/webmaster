@@ -69,3 +69,11 @@
     margin-bottom: 2px;
     padding-left: 10px;
 }
+.suggestions-subText{
+    color: #F6DFC0;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.0;
+    margin-bottom: 2px;
+    padding-left: 20px;
+}
