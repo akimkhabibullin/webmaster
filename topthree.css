@@ -1,0 +1,257 @@
+/* Page setup */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #6A0909;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+/*index*/
+.index a{
+    text-decoration: none;
+    color:#FBC52A;
+}
+
+.index__container{
+    color:#FBC52A;
+    height: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 10vw;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.index{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: left;
+    gap: 10px;
+}
+
+/*top three resource page*/
+/*headline (upper) page*/
+.topThreeResources__scrollArrow{
+    text-align: center;
+    align-items: center;
+    padding-top: 25vw;
+    padding-bottom: 3vw;
+}
+
+.topThreeResources__details{
+    padding-top: 2%;
+    padding-left: 10vw;
+}
+
+.topThreeResources{
+    background: 
+    linear-gradient(rgb(78, 11, 4, 0.35), rgb(78, 11, 4, 0.35))
+    ,url('images/top\ three\ resources\ background\ image.png');
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+    color: #F6DFC0;
+}
+
+.topThreeResources__headline h1 {
+    font-size: 80px;
+    font-weight: 800;
+    padding-left: 10vw;
+}
+/* Place Number + label +card*/
+
+.resource-block {
+  display: flex; 
+  flex-direction: column; 
+  align-items:flex-start;
+}
+
+/*Big #1*/
+.resource-place-number {
+  font-size: 99.89px; 
+  font-weight: 800; 
+  color: #F6DFc0; 
+  line-height: 1;
+}
+
+.resource-label {
+  font-size: 20px; 
+  font-weight: 800; 
+  letter-spacing: 2px; 
+  color: rgba(246, 223, 192, 0.8);
+  margin-bottom: 73px; 
+}
+
+/* Center content */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+  gap: 60px;
+}
+
+/* Resource card */
+.resource-card {
+  width: 320px;
+  background-color: #FFC15E;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #000;
+  color: #6A0909;
+}
+
+/* Text styles */
+.resource-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.resource-section {
+  margin-bottom: 14px;
+}
+
+.resource-section h4 {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.resource-section p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Link */
+.resource-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #6A0909;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Header wrapper */
+.site-header {
+  background-color: #4E0B04;
+  height: 89.37px;
+  display: flex;
+  justify-content: center; /* Centers content so width = 1440px */
+}
+
+/* Inner content with fixed width */
+.header-content {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Website name */
+.logo {
+  color: #FFC15E;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Navigation links */
+.nav-links a {
+  color: #FFC15E;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #F6DEB3;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  color: #4E0B04;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Left side */
+.footer-left p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-badge {
+  display: inline-block;
+  background-color: #FFC15E;
+  color: #4E0B04;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-created {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  margin-top: auto; /* 👈 pushes logo to bottom */
+  width: 140px;
+  height: auto;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+/* Logo image */
+.footer-logo {
+  width: 140px;
+  height: auto;
+}
+
+
