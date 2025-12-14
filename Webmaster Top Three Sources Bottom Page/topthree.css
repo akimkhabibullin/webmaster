@@ -284,11 +284,11 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-links a{
+.footer-links a {
   text-decoration: none;
   /* removes underline */
-  color: #6A0909;
-  /* Red color for navigator links*/
+  color:#FBC52A;
+  /* Gold color for navigator links*/
 }
 
 .footer-logo {
@@ -299,10 +299,6 @@ body {
 
 .footer-links a:hover {
   opacity: 0.8;
-  text-decoration: none;
-  /* removes underline */
-  color:#FBC52A;
-  /* Gold color for navigator links*/
 }
 
 /* Logo image */
