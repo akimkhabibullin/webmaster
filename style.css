@@ -90,8 +90,13 @@ body {
   height: 100%;
 }
 
-.footer-links {
+
+.footer-links a {
+  color: #6A0909;
+  text-decoration: none;
   margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer-logo {

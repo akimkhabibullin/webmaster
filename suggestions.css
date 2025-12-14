@@ -1,0 +1,22 @@
+/* Page background */
+.suggestions-page {
+    background-color: #6A0909;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    padding: 60px 80px;
+}
+
+/* Content wrapper */
+.suggestions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Page title */
+.suggestions-title {
+    color: #F6DFC0;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
