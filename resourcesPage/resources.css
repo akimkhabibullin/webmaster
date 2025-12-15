@@ -335,7 +335,7 @@ body {
 }
 
 .footer-logo {
-  margin-top: auto; /* 👈 pushes logo to bottom */
+  margin-top: auto; /*  pushes logo to bottom */
   width: 140px;
   height: auto;
 }
@@ -355,4 +355,5 @@ body {
   gap: 30px;                  
   justify-content: flex-end;  
 }
+
 
