@@ -117,7 +117,7 @@ body {
 
 .image-container {
     width: 400px;
-    height: 200px;  
+   /* height: 200px;  */
 }
 
 .page-marginleft {
@@ -209,7 +209,7 @@ body {
   grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
   grid-gap: 20px; /* Adds space between items */
   margin: 0 auto; 
-  width: 80%;
+  width: 100%;
   align-items: center;
 }
 
@@ -217,6 +217,12 @@ body {
 .grid-column {
   align-self: center;
   margin: 0 auto;
+}
+.value-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 500px;
 }
 
 .vertical-line {
@@ -233,5 +239,12 @@ body {
 .content-title {
     text-align: center;
     font-size: 25px;
+    font-weight: bold;
     padding-left: 10vw;
+}
+.image-container {
+  display: block;         
+  margin: 0;               
+  justify-self: start;     
+  max-width: 100%;         
 }
