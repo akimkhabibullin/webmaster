@@ -245,6 +245,7 @@ body {
   transition: background 0.2s;
   width: 80%; 
   max-width: 320px;
+  display: inline-block;
 }
 
 .community-btn:hover {
@@ -415,6 +416,7 @@ body {
   margin-top: auto;
   align-self: flex-start;
   transition: background 0.2s;
+  display: inline-block;
 }
 
 .hero-banner-btn:hover {
