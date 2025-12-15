@@ -3,7 +3,7 @@ body {
   /* removes default browser margin */
   margin: 0; 
   font-family: 'Inter', sans-serif;
-  /* background-color: #6A0909; */
+  background-color: #6A0909;
 }
 
 /* applies to ALL elements */
@@ -69,7 +69,7 @@ body {
 .topThreeResources{
     background: 
     linear-gradient(rgb(78, 11, 4, 0.35), rgb(78, 11, 4, 0.35))
-    ,url("../images/top\ three\ resources\ background\ image.png"); /**** background image****/
+    ,url("./images/top\ three\ resources\ background\ image.png"); /**** background image****/
     background-repeat: no-repeat;   
     background-size: cover;
     background-position: center;
