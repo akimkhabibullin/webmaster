@@ -46,13 +46,14 @@ body {
   opacity: 0.8;
 }
 
-/* Footer */
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 .site-footer {
   background-color: #F6DEB3;
-  padding: 40px 40px;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
-  
 }
 
 .footer-content {
@@ -98,6 +99,13 @@ body {
 
 .footer-links {
   margin-bottom: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  /* removes underline */
+  color:#4E0B04;
+  /* Gold color for navigator links*/
 }
 
 .footer-logo {
@@ -274,7 +282,7 @@ body {
 .content-title {
   color: #FFC15E;
   font-size: 28px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
   padding-left: 0;
 }
