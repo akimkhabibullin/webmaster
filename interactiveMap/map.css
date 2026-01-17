@@ -1,0 +1,94 @@
+/* map.css */
+
+body {
+  margin: 0;
+  background-color: #6A0909;
+  font-family: Arial, sans-serif;
+}
+
+/* optional styling for maps */
+
+h1{
+    color: #FFC15E;
+  text-align: center;
+}
+h2 {
+  color: #550303;
+  text-align: center;
+}
+.map-box {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #FFC15E;
+  padding: 15px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* let the iframe size itself inside the padding */
+.map-box iframe {
+  width: 100%;
+  height: 350px;   /* set height here */
+  border: 0;
+  border-radius: 8px;
+  display: block;  /* removes inline spacing */
+}
+/* ====== LAYOUT ====== */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  width: 240px;
+  background-color: #F6DCB1;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Sidebar title */
+.sidebar h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #550303;
+  margin: 0;
+}
+
+/* Sidebar links container (optional but clean) */
+.sidebar a {
+  position: relative;          /* REQUIRED for divider lines */
+  display: block;
+  text-decoration: none;
+  color: #550303;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.sidebar a:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(85, 3, 3, 0.25);
+}
+
+/* Hover effect (ChatGPT-ish) */
+.sidebar a:hover {
+  background-color: #FFC15E;
+  transform: translateX(4px);
+}
+
+/* ====== MAIN CONTENT ====== */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
