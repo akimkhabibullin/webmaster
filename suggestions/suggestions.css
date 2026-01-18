@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0; 
   padding: 0; 
@@ -91,13 +95,21 @@ html, body {
 
 /* Page title */
 .suggestions-title {
-    color: #F6DFC0;
+    color: #FFC15E;
     font-size: 70px;
     font-weight: 800;
     line-height: 1.0;
     margin-top: 20px;
     margin-bottom: 2px;
     padding-left: 0px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.suggestions-title:hover {
+    color: #FBC52A;
+    transform: translateX(4px);
 }
 .suggestions-subText{
     color: #F6DFC0;
@@ -127,12 +139,21 @@ html, body {
     width: 498px;
     height: 73px;
     background-color: #8E2424;
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     padding-left: 20px;
     margin-left: 70px;
-    
+    border: 2px solid rgba(255, 193, 94, 0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.input-box:focus-within {
+    background-color: #9e2e2e;
+    border-color: rgba(255, 193, 94, 0.5);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
 }
 
 
@@ -155,17 +176,26 @@ html, body {
 }
 .thick-input-box {
     width: 100%;
-    max-width: 1020px; /* aligns with your layout */
+    max-width: 1020px;
     height: 73px;
     background-color: #8E2424;
-    border-radius: 8px;
-
+    border-radius: 12px;
     display: flex;
     align-items: center;
     margin-top: 20px;
     padding: 15px;
     margin-left: 70px;
-    margin-bottom: 5px; /* spacing between the two boxes */
+    margin-bottom: 5px;
+    border: 2px solid rgba(255, 193, 94, 0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.thick-input-box:focus-within {
+    background-color: #9e2e2e;
+    border-color: rgba(255, 193, 94, 0.5);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
 }
 
 /* Input styling */
@@ -191,28 +221,29 @@ html, body {
   background-color: #FFC15E;
   color: #550303;
   border: none;
-  border-radius: 8px;
-
+  border-radius: 12px;
   font-family: 'Kumb Sans', sans-serif;
   font-size: 18px;
-  font-weight: 500;
-
+  font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   width: 240px;          
   height: 60px;          
   display: inline-block;
   margin: 40px 0 30px 70px;
   text-align: center;
-  line-height: 60px;     /* vertically centers text */
-
-  text-decoration: none;  
+  line-height: 60px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(78, 11, 4, 0.2);
 }
 
 .submit-btn:hover,
 .hero-banner-btn:hover {
   background-color: #E19C4D;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  border-color: rgba(78, 11, 4, 0.4);
 }
 
 /* Footer */

@@ -113,7 +113,9 @@
   transition: all 0.3s ease;
 }
 
-/* Footer */
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 .site-footer {
   background-color: #F6DEB3;
@@ -137,14 +139,34 @@
   padding-left: 0;
 }
 
-.contact-badge {
-  display: inline-block;
-  background-color: #FFC15E;
-  color: #4E0B04;
-  padding: 6px 12px;
+.contact-btn {
+  background: #FFC15E;
+  color: #550303;
+  border: 0 !important;
+  outline: 0 !important;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent;
+
   border-radius: 8px;
-  font-weight: 600;
-  margin-bottom: 12px;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-top: auto;
+  align-self: flex-start;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.contact-btn:hover,
+.contact-btn:focus,
+.contact-btn:active {
+  outline: none;
+  text-decoration: none;
+  transform: scale(1.05);
+  background: #E19C4D; 
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .footer-created {
@@ -188,4 +210,17 @@
 .footer-logo {
   width: 140px;
   height: auto;
+}
+
+.image-container {
+    width: 400px;
+}
+
+.page-marginleft {
+    margin-left: 10vw;
+}
+
+.section-title p {
+    text-align: center;
+    font-size: 25px;
 }

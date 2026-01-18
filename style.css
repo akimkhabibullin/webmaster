@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumb Sans', sans-serif;
-    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * p {
@@ -136,8 +139,8 @@ body {
   display: flex;
   flex-direction: row;
   background: #D59042;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
   width: 1125px;
   min-height: 640px;
   max-width: 90vw;
@@ -145,14 +148,22 @@ body {
   overflow: hidden;
   position: relative;
   flex-wrap: wrap;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(255, 193, 94, 0.2);
 
   animation: fadeSlide 1s ease forwards; 
   opacity:0; 
 }
 
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  border-color: rgba(255, 193, 94, 0.4);
+}
+
 @keyframes fadeSlide {
   0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .testimonial-heading {
@@ -192,7 +203,15 @@ body {
   border-radius: 16px;
   border: 4px solid #FFC15E;
   background: none;
-  margin-top: 160px; /* Increased to move image further down */
+  margin-top: 160px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.testimonial-card:hover .testimonial-image img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border-color: #FBC52A;
 }
 
 .testimonial-content {
@@ -336,13 +355,20 @@ body {
 .community-image img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1 / 1; /* Make it square */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 16px;
-  border: 3px solid #2e2e2e;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  border-radius: 20px;
+  border: 3px solid rgba(255, 193, 94, 0.3);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
   max-width: 100%;
   max-height: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.community-image:hover img {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  border-color: rgba(255, 193, 94, 0.6);
 }
 
 /* Footer */
@@ -452,21 +478,28 @@ body {
 
 .hero-banner-bg {
   position: relative;
-  width: 1125px;           /* Match testimonial-card width */
-  min-height: 550px;       /* Match testimonial-card height */
+  width: 1125px;
+  min-height: 550px;
   max-width: 90vw;
-  height: 550px;           /* Fixed height for consistency */
-  border-radius: 20px;
+  height: 550px;
+  border-radius: 24px;
   overflow: hidden;
   background: 
     linear-gradient(rgba(150, 0, 0, 0.35), rgba(150, 0, 0, 0.35)),
     url('/images/middle-age-friends-having-fun.jpg') center center/cover no-repeat;
   display: flex;
   align-items: flex-start;
-
-  transition: transform 10s ease; 
-  animation: fadeIn 5s ease forwards; 
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  border: 2px solid rgba(255, 193, 94, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeIn 1s ease forwards; 
   opacity:0;
+}
+
+.hero-banner-bg:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  border-color: rgba(255, 193, 94, 0.4);
 }
 
 @keyframes fadeIn{
@@ -550,13 +583,23 @@ body {
   transform: translateY(-50%);
   width: 56px;
   height: 56px;
-  background: #a74a4a; /* Light red, different from main bg */
+  background: #a74a4a;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(178,58,72,0.10);
+  box-shadow: 0 4px 12px rgba(178,58,72,0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 193, 94, 0.3);
+}
+
+.testimonial-arrow-circle:hover {
+  background: #c55a5a;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(178,58,72,0.4);
+  border-color: rgba(255, 193, 94, 0.6);
 }
 
 .testimonial-arrow-circle.left {

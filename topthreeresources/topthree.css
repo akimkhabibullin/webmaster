@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Page setup */
 body {
-  /* removes default browser margin */
   margin: 0; 
   font-family: 'Inter', sans-serif;
   background-color: #6A0909;
@@ -68,12 +71,31 @@ body {
 /* main hero container */
 .topThreeResources{
     background: 
-    linear-gradient(rgb(78, 11, 4, 0.35), rgb(78, 11, 4, 0.35))
-    ,url('/images/sunsetpagoda.png'); /**** background image****/
+    linear-gradient(rgb(78, 11, 4, 0.5), rgb(78, 11, 4, 0.5))
+    ,url('/images/sunsetpagoda.png');
     background-repeat: no-repeat;   
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: #F6DFC0;
+    position: relative;
+    overflow: hidden;
+}
+
+.topThreeResources::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(78, 11, 4, 0.4), rgba(106, 9, 9, 0.3));
+    z-index: 1;
+}
+
+.topThreeResources__headline {
+    position: relative;
+    z-index: 2;
 }
 
 /* Headline Apperance */
@@ -81,6 +103,15 @@ body {
     font-size: 80px;
     font-weight: 800;
     padding-left: 10vw;
+    color: #FFC15E;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.topThreeResources__headline h1:hover {
+    color: #FBC52A;
+    transform: translateX(4px);
 }
 
 /*============================*/
@@ -96,11 +127,16 @@ body {
 /* Big ranking number (#1, #2, #3) */
 .resource-place-number {
   font-size: 99.89px;
-  /* very large for emphasis*/ 
   font-weight: 800; 
-  color: #F6DFc0; 
+  color: #FFC15E; 
   line-height: 1;
-  /*removes extra vertical spacing*/
+  text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.resource-block:hover .resource-place-number {
+  color: #FBC52A;
+  transform: scale(1.1);
 }
 
 /* Category label (LEGAL, CULTURE, etc.) */
@@ -142,11 +178,18 @@ body {
 .resource-card {
   width: 320px;
   background-color: #FFC15E;
-  border-radius: 16px;
-  /*rounded corners*/
+  border-radius: 20px;
   padding: 20px;
-  border: 1px solid #000;
+  border: 2px solid rgba(78, 11, 4, 0.3);
   color: #6A0909;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.resource-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border-color: rgba(78, 11, 4, 0.5);
 }
 
 /* Resource Title */
@@ -178,15 +221,18 @@ body {
 /* ========================= */
 .resource-link {
   display: inline-block;
-  /*allows margin and padding*/
   margin-top: 12px;
   font-weight: 800;
   text-decoration: none;
   color: #6A0909;
+  transition: all 0.3s ease;
+  padding: 4px 0;
 }
 
 .resource-link:hover {
   text-decoration: underline;
+  color: #4E0B04;
+  transform: translateX(4px);
 }
 
 
